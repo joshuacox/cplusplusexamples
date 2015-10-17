@@ -12,35 +12,32 @@ using namespace std;
 //Purpose: Computing whether or not a date is a leap year
 //
 //Parameters: int year - the year
-bool leap_year(int year)
+bool leapYear(int year)
 {
-
-    if ((year % 4 == 0) && !(year % 100 == 0))
-    {
-        cout << year << " is a leap year.";
-        return 1;
-    }
-	
-	if (year % 400 == 0)
-	{
-		cout << year << " is a leap year.";
-		return 1;
-	}
-	
-    else
-    {
-        cout << year << " is not a leap year.";
-        return 1;
-    }
-
+  if (((year % 4 == 0) && !(year % 100 == 0)) || (year % 400 == 0))
+  {
+    return 1;
+  }
+  else
+  {
+    return 0;
+  }
 }
 
 int main()
 {
-		int year;
-		cout << "Enter a year: " << endl;
-		cin >> year;
-		cout << leap_year(year);
-		
-		return 0;
+  int year;
+  cout << "Enter a year: " << endl;
+  cin >> year;
+
+  if(leapYear(year))
+  {
+    cout << year << " is a leap year.\n";
+  }
+  else
+  {
+    cout << year << " is not a leap year.\n";
+  }
+
+  return 0;
 }
