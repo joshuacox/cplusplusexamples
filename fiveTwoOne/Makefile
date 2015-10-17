@@ -3,8 +3,13 @@ SHELL = /bin/sh
 
 all: clean fiveTwentyOne
 
+c: clean fiveTwentyOneC
+
 fiveTwentyOne:
 	g++ fiveTwentyOne.cpp -o fiveTwentyOne
+
+fiveTwentyOneC:
+	gcc fiveTwentyOne.c -o fiveTwentyOne
 
 # notice I added '-@' to the beginning of this line
 # '-' means I don't care if it fails carry on without stopping
