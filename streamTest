@@ -1,0 +1,25 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+	
+	string input="~/Desktop/School/input";
+	string fname;
+	string lname;
+	//int x; saved for later
+	//double y; saved for later
+	
+	ifstream in_file;
+	in_file.open(input.c_str());
+	in_file >> fname;
+	
+	cout << input << fname;
+	
+	in_file.close();
+	//system("pause");
+	return 0;
+}
