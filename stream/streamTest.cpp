@@ -24,6 +24,13 @@ int main()
 
   // echo a newline
   cout << '\n';
+  string input2="notice it truncated after the space I think at this point if we simplify that cout to not have input it is fine";
+  cout << input2;
+  cout << '\n';
+  cout <<  fname;
+  string input3="this next code can handle spaces and newlines";
+  cout << input3;
+  cout << '\n';
   //start alt
   string line;
   ifstream myfile ("input");

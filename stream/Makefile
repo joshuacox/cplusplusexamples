@@ -14,6 +14,9 @@ clean:
 	echo loud
 	@ echo quiet
 	-@rm -f streamTest
+	-@rm input
 
 input:
-	echo 'hello world'>input
+	echo 'helloworldwithoutspace then hello world but this will all be ignored'>input
+	echo 'second line for kicks'>>input
+	echo 'third line for kicks'>>input
